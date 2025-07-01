@@ -18,4 +18,11 @@ function Adicionar() {
      <td>${valor}</td>
     </tr>`;
   $("#lista-produto tbody").append(linha);
+  LimparTela();
+}
+
+function LimparTela() {
+  $("#Produto").val("");
+  $("#quantidade").val("");
+  $("#valor").val("");
 }
